@@ -1,0 +1,15 @@
+{
+	"name": "ghost-in-the-cell",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"start": "npx webpack --mode development",
+		"build": "npx webpack --mode production"
+	},
+	"devDependencies": {
+		"webpack": "^4.42.0",
+		"webpack-cli": "^3.3.11"
+	}
+}
