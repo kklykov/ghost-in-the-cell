@@ -3,13 +3,18 @@ const path = require('path')
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
 	mode: 'development',
-	entry: './index.js',
+	entry: './Bot.js',
 	output: {
-		filename: 'main.js',
+		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	resolve: {
 		extensions: ['.js'],
 	},
-	devtool: 'source-map',
+	watch: true,
+	watchOptions: {
+		aggregateTimeout: 300,
+		poll: 1000,
+		ignored: /node_modules/,
+	},
 }

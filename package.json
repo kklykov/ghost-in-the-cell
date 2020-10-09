@@ -1,15 +1,26 @@
 {
 	"name": "ghost-in-the-cell",
 	"version": "1.0.0",
-	"main": "index.js",
+	"description": "Ghost in the cell Bot with simulation",
+	"main": "Bot.js",
+	"author": "Konstantin Klykov <kklykov@gmail.com>",
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"start": "npx webpack --mode development",
-		"build": "npx webpack --mode production"
+		"start": "npx webpack --mode development --watch --info-verbosity verbose",
+		"build": "npx webpack --mode production",
+		"test": "jest"
 	},
 	"devDependencies": {
-		"webpack": "^4.42.0",
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.5",
+		"babel-jest": "^25.3.0",
+		"babel-loader": "^8.1.0",
+		"jest": "^25.3.0",
+		"webpack": "^4.42.1",
 		"webpack-cli": "^3.3.11"
+	},
+	"dependencies": {
+		"rfdc": "^1.1.4"
 	}
 }
